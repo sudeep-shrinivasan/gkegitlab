@@ -19,7 +19,7 @@ MIN_NODES=${MIN_NODES-0}
 INT_NETWORK=${INT_NETWORK-default}
 PREEMPTIBLE=${PREEMPTIBLE-false}
 EXTRA_CREATE_ARGS=${EXTRA_CREATE_ARGS-""}
-USE_STATIC_IP=${USE_STATIC_IP-false};
+USE_STATIC_IP=${USE_STATIC_IP-true};
 external_ip_name=${CLUSTER_NAME}-external-ip;
 
 # MacOS does not support readlink, but it does have perl
