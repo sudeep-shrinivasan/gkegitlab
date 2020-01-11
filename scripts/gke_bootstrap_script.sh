@@ -91,7 +91,7 @@ function bootstrap(){
   echo "Update done..."
   if ! ${USE_STATIC_IP}; then
     echo "using static IP so installign dns service"
-    helm install --name dns --namespace kube-system stable/external-dns \
+    helm install dns --namespace kube-system stable/external-dns \
       --version '^2.1.2' \
       --set provider=google \
       --set google.project=$PROJECT \
